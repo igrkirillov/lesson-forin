@@ -48,5 +48,5 @@ describe('sort utils module', () => {
       { key: "nickname", value: "laba" },
       { key: "surname", value: "Kirillov" }
     ]);
-  })
-})
+  });
+});

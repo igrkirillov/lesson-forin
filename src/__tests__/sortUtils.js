@@ -10,8 +10,11 @@ describe('sort utils module', () => {
       gender: "male"
     }
     expect(orderByProps(person, ["name", "age"])).toEqual([
-      { key: "name", value: "Igor" }, { key: "age", value: 37 }, { key: "gender", value: "male" },
-      { key: "nickname", value: "laba" }, { key: "surname", value: "Kirillov" }
+      { key: "name", value: "Igor" },
+      { key: "age", value: 37 },
+      { key: "gender", value: "male" },
+      { key: "nickname", value: "laba" },
+      { key: "surname", value: "Kirillov" }
     ]);
   });
   test ('without props', () => {
@@ -23,8 +26,11 @@ describe('sort utils module', () => {
       gender: "male"
     }
     expect(orderByProps(person)).toEqual([
-      { key: "age", value: 37 }, { key: "gender", value: "male" }, { key: "name", value: "Igor" },
-      { key: "nickname", value: "laba" }, { key: "surname", value: "Kirillov" }
+      { key: "age", value: 37 },
+      { key: "gender", value: "male" },
+      { key: "name", value: "Igor" },
+      { key: "nickname", value: "laba" },
+      { key: "surname", value: "Kirillov" }
     ]);
   })
 })
